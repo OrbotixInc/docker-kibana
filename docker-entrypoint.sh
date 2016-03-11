@@ -22,5 +22,5 @@ if [ "$1" = 'kibana' ]; then
 	set -- gosu kibana tini -- "$@"
 fi
 
-oauth2_proxy -email-domain=$OAUTH2_EMAIL_DOMAIN -upstream=http://127.0.0.1:5061 -http-address=http://0.0.0.0:5062 &
+oauth2_proxy -email-domain=$OAUTH2_EMAIL_DOMAIN -upstream=http://127.0.0.1:5601 -http-address=http://0.0.0.0:5602 &
 exec "$@"

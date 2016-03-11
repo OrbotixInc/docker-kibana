@@ -57,5 +57,5 @@ ENV PATH /opt/kibana/bin:$PATH
 
 COPY docker-entrypoint.sh /
 
-EXPOSE 5062
+EXPOSE 5602
 CMD /docker-entrypoint.sh kibana
